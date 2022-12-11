@@ -30,6 +30,7 @@ h2 {
   /* justify-content: space-between; */
   text-align: center;
   padding: 0 2em;
+  width: 50%;
 }
 
 .header {
@@ -74,7 +75,7 @@ strong {
   justify-content: center;
   text-align: center;
   /* padding: 2em; */
-  width: 90%;
+  width: 50%;
   margin: 0 2em;
 }
 
@@ -114,6 +115,13 @@ strong {
   color: #fff;
   border: none;
   border-radius: 5px;
+  opacity: 100%;
+}
+
+.body--btn:hover,
+.body--btn:focus {
+  color: #fff;
+  background: blue;
 }
 
 .body--disclaimer {
@@ -144,5 +152,10 @@ strong {
 
   .body {
     margin: 20px;
+  }
+
+  .body,
+  .header {
+    width: 90%;
   }
 }
