@@ -44,6 +44,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0;
 }
 
 .header--caption-text,
@@ -57,22 +58,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* .header--titles {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
-.header--title {
-  margin: 0;
-}
-
-.header--sub-title {
-  margin: 0;
-  font-weight: bold;
-}
-
+.header--sub-title,
 strong {
   font-weight: bold;
 }
@@ -86,21 +72,19 @@ strong {
   width: 33%;
 }
 
-.body--subtitle,
-.body--btn {
-  text-transform: uppercase;
-}
-
-.body--form {
+.body--titles {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  border-radius: 5px;
-  width: 60%;
+  align-items: center;
 }
 
 .body--title {
   margin: 0;
+}
+
+.body--subtitle,
+.body--btn {
+  text-transform: uppercase;
 }
 
 .body--subtitle {
@@ -109,21 +93,21 @@ strong {
   font-weight: bold;
 }
 
+.body--text {
+  max-width: 50%; 
+}
+
+.body--form {
+  margin: 0 auto;
+  width: 60%;
+}
+
 .body--input {
   margin-bottom: 1em;
   text-align: center;
   opacity: 50% ;
 }
 
-.body--titles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.body--text {
-  max-width: 50%; 
-}
 
 .body--btn {
   padding: 0.5em 1em;
