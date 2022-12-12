@@ -1,41 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.125rem;
 }
 
 /* Typography */
 
 h1 {
-  font-size: 3.5rem;
-  font-weight: normal;
+  font-size: 2.25rem;
+  font-weight: 300;
   color: #fff;
 }
 
+.header--sub-title,
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.3125rem;
 }
 
 /* LAYOUT */
 
 .content {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.header,
+.body{
+  min-height: 100vh;
 }
 
 .header{
+  width: 66%;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   text-align: center;
   padding: 0 2em;
-  width: 50%;
-}
-
-.header {
   background-image: url(./assets/dark-ribs.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header--caption-text,
@@ -45,16 +53,16 @@ h2 {
 
 .header--caption-text {
   border-top: 5px solid #f18119;
-  margin-top: 0;
-  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-.header--titles {
+/* .header--titles {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .header--title {
   margin: 0;
@@ -74,9 +82,8 @@ strong {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  /* padding: 2em; */
-  width: 50%;
   margin: 0 2em;
+  width: 33%;
 }
 
 .body--subtitle,
@@ -87,9 +94,9 @@ strong {
 .body--form {
   display: flex;
   flex-direction: column;
-  /* width: 50%; */
   margin: 0 auto;
   border-radius: 5px;
+  width: 60%;
 }
 
 .body--title {
@@ -106,7 +113,16 @@ strong {
   margin-bottom: 1em;
   text-align: center;
   opacity: 50% ;
-  min-width: 80%;
+}
+
+.body--titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body--text {
+  max-width: 50%; 
 }
 
 .body--btn {
@@ -124,6 +140,7 @@ strong {
   background: blue;
 }
 
+
 .body--disclaimer {
   font-size: 0.625rem;
 }
@@ -131,31 +148,34 @@ strong {
 @media (max-width: 550px){
 
   body {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   h1 {
-    font-size: 2.25rem;
+    font-size: 3.5rem;
   }
 
   h2 {
-    font-size: 1.3125rem;
+    font-size: 1.75rem;
   }
 
   .content {
     flex-direction: column;
-  }
-
-  .header--title {
-    font-size: 2.25rem;
-  }
-
-  .body {
-    margin: 20px;
+    align-items: center;
   }
 
   .body,
   .header {
-    width: 90%;
+    width: 100%;
+    min-height: 100vh;
   }
+
+  .header--caption-text{
+    display: inline-block;
+  }
+
+  .body {
+    margin: 0;
+  }
+
 }
